@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- MEDIA FILE -->
+    <link rel="stylesheet" href="media.css" />
+    <!-- FONT-AWSOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- GOOGLE FONTS CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caudex&family=Kanit:wght@500&family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQUERY CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <!-- ANIMETED CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- WOW CDN -->
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <!-- WEB SITE LINK -->
+    <link
+      rel="stylesheet"
+      href="https://preview.colorlib.com/theme/aroma/index.html"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>AROMA-Shop Category</title>
+    <style>
+      .main-con{
+        width: 100%;
+        height: 200vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* border: 1px solid black; */
+      }
+      .sub1{
+        width: 25%;
+        height: 190vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        /* border: 1px solid red; */
+      }
+      
+      .sub1-Browse_Categorie{
+        width: 90%;
+        height: 54vh;
+        margin-top: 30px;
+        /* border: 1px solid blue; */
+      }
+      .Browse_Categorie_title{
+        width: 100%;
+        height: 100%;
+      }
+      .bct-title{
+        width: 100%;
+        height: 6vh;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #384aeb;
+        /* border: 1px solid black; */
+      }
+      .bct-check{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        color: rgb(85, 85, 85);
+        background-color: #F1F6F7;
+        /* border: 1px solid black; */
+      }
+      .bct-check-2{
+        height: auto;
+      }
+      .sub1-Product_Filters{
+        width: 90%;
+        height: 80vh;
+        margin-top: 30px;
+        /* border: 1px solid blue; */
+      }
+      
+      .sub2{
+        width: 75%;
+        height: 190vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        /* border: 1px solid red; */
+      }
+      .sub2-serch{
+        width: 95%;
+        height: 8vh;
+        background-color: #F1F6F7;
+        /* border: 1px solid black; */
+      }
+      .sub2-img{
+        width: 95%;
+        height: 170vh;
+        /* border: 1px solid blue; */
+      }
+      .main{
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #F1F6F7;
+        /* border: 1px solid black; */
+      }
+      p{
+        font-family: "Roboto Condensed", sans-serif;
+      }
+      h5{
+        font-family: "Roboto Condensed", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container ">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png.webp" alt="" class=" m-4" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse "
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  shop
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Shop_Category.html">Shop Category</a></li>
+                  <li><a class="dropdown-item" href="Product_Details.html">Product Details</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Product_Checkout.html">Product Checkout</a>
+                  </li>
+                  <li><a class="dropdown-item" href="Confirmation.html">Confirmation</a></li>
+                  <li><a class="dropdown-item" href="Shopping_Cart.html">Shopping Cart</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li><a class="dropdown-item" href="Register.html">Register</a></li>
+                  <li><a class="dropdown-item" href="Tracking.html">Tracking</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="con_form.html">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-1 mb-2 mb-lg-0 ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="fa-solid fa-magnifying-glass fs-5"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-cart-shopping fs-5"></i>
+                </a>
+              </li>
+            </ul>
+            <ul
+              class="navbar-nav me-auto w-auto mb-2 mb-lg-0 ms-0 "
+            >
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <button
+                    class="btn btn-light text-dark border border-1 rounded-pill"
+                    id="firstbtn"
+                  >
+                    Buy Now
+                  </button>
+                  <!-- ------------------------------------ -->
+                  
+                  <!-- ------------------------------------ -->
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ------------------------------------------------------------------- -->
+    <section class="main">
+      <h1>Shop Category</h1>
+      <p>Home-
+        Shop Category</p>
+    </section>
+    <!-- ------------------------------------------------------------------- -->
+    <section class="main-con">
+        <div class="container d-flex align-items-center ">
+      <div class="sub1">
+        <div class="sub1-Browse_Categorie">
+            <div class="Browse_Categorie_title">
+              <div class="bct-title">
+                <h3>Browse Categories</h3>
+              </div>
+              <div class="bct-check">
+                <p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Men (3600)
+                    </label>
+                  </div>
+                </p>
+                <p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Women (3600)
+                    </label>
+                  </div>
+                </p>
+                <p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Accessories (3600)
+                    </label>
+                  </div>
+                </p>
+                <p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Footwear (3600)
+                    </label>
+                  </div>
+                </p>
+                <p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Bay item (3600)
+                    </label>
+                  </div>
+                </p>
+                <p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Electronics (3600)
+                    </label>
+                  </div>
+                </p>
+                <p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Food (3600)
+                    </label>
+                  </div>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="sub1-Product_Filters">
+          <div class="Browse_Categorie_title">
+            <div class="bct-title">
+              <h3>Product Filters</h3>
+            </div>
+            <div class="bct-check bct-check-2">
+              
+            <h5>Brands</h5>
+              <p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Apple(29)
+                  </label>
+                </div>
+              </p>
+              <p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Asus(29)
+                  </label>
+                </div>
+              </p>
+              <p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Gionee(19)
+                  </label>
+                </div>
+              </p>
+              <p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Micromax(19)
+                  </label>
+                </div>
+              </p>
+              <p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Samsung(19)
+                  </label>
+                </div>
+              </p>
+              
+              <hr>
+              <h5>Color</h5>
+              <p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Black(29)
+                  </label>
+                </div>
+              </p>
+              <p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Black Leather(29)
+                  </label>
+                </div>
+              </p>
+              <p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Black with red(19)
+                  </label>
+                </div>
+              </p>
+              <p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Gold(19)
+                  </label>
+                </div>
+              </p>
+              <p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Spacegrey(19)
+                  </label>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="sub2">
+        <div class="sub2-serch d-flex p-1">
+          <select class="form-select w-auto m-1" aria-label="Default select example">
+            <option selected>Default Sorting</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <select class="form-select w-auto m-1" aria-label="Default select example">
+            <option selected>Show 12</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <div class="input-group w-25 ms-auto mt-1 h-50">
+            <input type="text" class="form-control" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+        </div>
+        <div class="sub2-img">
+          <div class="s3-main-bx">
+            
+            <div class="s3-child2 row">
+              <div
+                class="card col-lg-3 col-md-6 col-sm-12"
+                style="width: 18rem"
+                id="s3card"
+              >
+                <img src="img/product1.png.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="card-text text-center">
+                    <p>Accessories</p>
+                    <h5>Quartz Belt Watch</h5>
+                    <h6>$150.00</h6>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card col-lg-3 col-md-6 col-sm-12"
+                style="width: 18rem"
+                id="s3card"
+              >
+                <img src="img/product2.png.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="card-text text-center">
+                    <p>Accessories</p>
+                    <h5>Women Freshwash</h5>
+                    <h6>$150.00</h6>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card col-lg-3 col-md-6 col-sm-12"
+                style="width: 18rem"
+                id="s3card"
+              >
+                <img src="img/product3.png.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="card-text text-center">
+                    <p>Accessories</p>
+                    <h5>Room Flash Light</h5>
+                    <h6>$150.00</h6>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card col-lg-3 col-md-6 col-sm-12"
+                style="width: 18rem"
+                id="s3card"
+              >
+                <img src="img/product4.png.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="card-text text-center">
+                    <p>Accessories</p>
+                    <h5>Quartz Bag</h5>
+                    <h6>$150.00</h6>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card col-lg-3 col-md-6 col-sm-12"
+                style="width: 18rem"
+                id="s3card"
+              >
+                <img src="img/product5.png.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="card-text text-center">
+                    <p>Accessories</p>
+                    <h5>Man Office Bag</h5>
+                    <h6>$150.00</h6>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card col-lg-3 col-md-6 col-sm-12"
+                style="width: 18rem"
+                id="s3card"
+              >
+                <img src="img/product6.png.webp" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <div class="card-text text-center">
+                    <p>Accessories</p>
+                    <h5>Charging Car</h5>
+                    <h6>$150.00</h6>
+                  </div>
+                </div>
+              </div>
+              <div
+              class="card col-lg-3 col-md-6 col-sm-12"
+              style="width: 18rem"
+              id="s3card"
+            >
+              <img src="img/product6.png.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-text text-center">
+                  <p>Accessories</p>
+                  <h5>Charging Car</h5>
+                  <h6>$150.00</h6>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card col-lg-3 col-md-6 col-sm-12"
+              style="width: 18rem"
+              id="s3card"
+            >
+              <img src="img/product7.png.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-text text-center">
+                  <p>Accessories</p>
+                  <h5>Blutooth Speaker</h5>
+                  <h6>$150.00</h6>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card col-lg-3 col-md-6 col-sm-12"
+              style="width: 18rem"
+              id="s3card"
+            >
+              <img src="img/product8.png.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-text text-center">
+                  <p>Accessories</p>
+                  <h5>Charging</h5>
+                  <h6>$150.00</h6>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+   
+    <!-- ---------------------------------------------------- -->
+    <footer>
+      <div class="f-sub container">
+        <div class="f-bx-main row">
+          <div class="f-bx col-lg-3 col-md-6 col-sm-12">
+            <h1 class="text-light">Our Mission</h1>
+            <br />
+            <p class="text-light">
+              So seed seed green that winged cattle in. Gathering thing made fly
+              you're no divided deep moved us lan Gathering thing us land years
+              living.
+            </p>
+            <p class="text-light">
+              So seed seed green that winged cattle in. Gathering thing made fly
+              you're no divided deep moved
+            </p>
+          </div>
+          <div
+            class="f-bx col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4 class="text-light">Quick Links</h4>
+            <br />
+            <ul>
+              <li><a href="#" class="text-light">Home</a></li>
+              <li><a href="#" class="text-light">Shop</a></li>
+              <li><a href="#" class="text-light">Blog</a></li>
+              <li><a href="#" class="text-light">Product</a></li>
+              <li><a href="#" class="text-light">Brand</a></li>
+              <li><a href="#" class="text-light">Contact</a></li>
+            </ul>
+          </div>
+          <div
+            class="f-bx col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4 class="text-light">Gallery</h4>
+            <br />
+            <div class="f-bx-imgbx">
+              <div class="f-img-bx" id="f-img1"></div>
+              <div class="f-img-bx" id="f-img2"></div>
+              <div class="f-img-bx" id="f-img3"></div>
+              <div class="f-img-bx" id="f-img4"></div>
+              <div class="f-img-bx" id="f-img5"></div>
+              <div class="f-img-bx" id="f-img6"></div>
+            </div>
+          </div>
+          <div
+            class="f-bx col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4 class="text-light">Contact Us</h4>
+            <div class="f-bx-imgbx-last">
+              <div class="f-icon-area">
+                <div class="f-icobx">
+                  <img src="img/iconmonstr-paper-plane-1-240.png" alt="" />
+                </div>
+                <div class="f-i-conbx">
+                  <h5 class="text-light">Head Office</h5>
+                  <p class="text-light">123, Main Street, Your City</p>
+                </div>
+              </div>
+              <div class="f-icon-area">
+                <div class="f-icobx">
+                  <img src="img/iconmonstr-phone-3-240.png" alt="" />
+                </div>
+                <div class="f-i-conbx">
+                  <h5 class="text-light">Phone Number</h5>
+                  <p class="text-light">+123 456 7890</p>
+                  <p class="text-light">+123 456 7890</p>
+                </div>
+              </div>
+              <div class="f-icon-area">
+                <div class="f-icobx">
+                  <img src="img/iconmonstr-email-1-240.png" alt="" />
+                </div>
+                <div class="f-i-conbx">
+                  <h5 class="text-light">Email</h5>
+                  <p class="text-light">free@infoexample.com</p>
+                  <p class="text-light">www.infoexample.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ------------------------------------------- -->
+    <footer class="foot-dev-name">
+      <p><b>YASH DUNGARIYA</b></p>
+    </footer>
+    </body>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </html>
+  

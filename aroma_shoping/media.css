@@ -1,0 +1,181 @@
+@media (max-width: 992px) {
+  .s1-banner3 {
+    width: 70%;
+    height: 50vh;
+    left: 60px;
+    top: 130px;
+  }
+  .s1-con-bx h5 {
+    font-size: 1rem;
+  }
+  .s1-con-bx h1 {
+    font-size: 1.5rem;
+    margin: 5px 0px;
+  }
+  #s1btn {
+    width: 130px;
+    height: 40px;
+  }
+  .s1-con-bx {
+    padding: 2em 2em;
+  }
+  /* ---------------------------- */
+  .sec-2 {
+    height: auto;
+  }
+  .s2-sub {
+    height: auto;
+  }
+  .s2-box {
+    margin: 10px 0px;
+  }
+  /* --------------------------------- */
+  .s3-child2 {
+    height: auto;
+  }
+  .s3-sub {
+    height: auto;
+  }
+  .sec-3 {
+    height: auto;
+  }
+  /* ----------------------------------- */
+  .s4-box {
+    width: 50%;
+  }
+  /* --------------------------------------- */
+  .sec-5 {
+    display: none;
+  }
+  /* ---------------------------------------------- */
+  .s6-bx2 {
+    height: auto;
+  }
+  .s6-sub {
+    height: auto;
+  }
+  .sec-6 {
+    height: auto;
+  }
+  #s6-cc {
+    margin-top: 10px;
+  }
+  /* ---------------------------------------------- */
+  .f-sub {
+    height: 100vh;
+  }
+  footer {
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .f-bx-main {
+    height: 98vh;
+  }
+  .f-bx {
+    height: 46vh;
+  }
+}
+@media (max-width: 768px) {
+  .s1-con-bx {
+    padding: 5em 2em;
+  }
+  .s1-con-bx p {
+    display: none;
+  }
+  /* ---------------------------- */
+  .sec-2 {
+    height: auto;
+  }
+  .s2-sub {
+    height: auto;
+  }
+  /* --------------------------------------- */
+  .sec-5 {
+    display: none;
+  }
+  /* ---------------------------------------------- */
+  .s6-bx2 {
+    height: auto;
+  }
+  .s6-sub {
+    height: auto;
+  }
+  .sec-6 {
+    height: auto;
+  }
+  #s6-cc {
+    margin-top: 10px;
+  }
+  /* ------------------------------------ */
+  .s7-sub {
+    width: 80%;
+  }
+  /* ------------------------------------------------ */
+  footer {
+    height: auto;
+  }
+  .f-sub {
+    height: auto;
+  }
+  .f-bx-main {
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  .s1-banner3 {
+    width: 90%;
+    height: 40vh;
+    left: 10px;
+    top: 160px;
+  }
+  .s1-con-bx h5 {
+    font-size: 0.8rem;
+  }
+  .s1-con-bx h1 {
+    font-size: 1rem;
+    margin: 5px 0px;
+  }
+  #s1btn {
+    width: 130px;
+    height: 40px;
+  }
+  .s1-con-bx {
+    padding: 5em 1em;
+  }
+  /* ----------------------------------- */
+  .s4-box {
+    width: 80%;
+    background: url(img/parallax-bg.png.webp);
+    background-size: cover;
+    background-position: left;
+    margin-left: 10%;
+  }
+  .sec-4 {
+    background: url(img/parallax-bg.png.webp);
+    background-size: cover;
+    background-position: left;
+  }
+  /* --------------------------------------- */
+  .sec-5 {
+    display: none;
+  }
+  /* ---------------------------------------------- */
+  .s6-bx2 {
+    height: auto;
+  }
+  .s6-sub {
+    height: auto;
+  }
+  .sec-6 {
+    height: auto;
+  }
+  #s6-cc {
+    margin-top: 10px;
+  }
+  /* ------------------------------------- */
+  .s7-sub {
+    width: 90%;
+  }
+}

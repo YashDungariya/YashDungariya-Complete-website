@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- MEDIA FILE -->
+    <link rel="stylesheet" href="media.css" />
+    <!-- FONT-AWSOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <!-- GOOGLE FONTS CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caudex&family=Kanit:wght@500&family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQUERY CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <!-- ANIMETED CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- WOW CDN -->
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <!-- WEB SITE LINK -->
+    <link
+      rel="stylesheet"
+      href="https://preview.colorlib.com/theme/aroma/single-product.html"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>AROMA-Home-Blog</title>
+    <style>
+      .main {
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #f1f6f7;
+        /* border: 1px solid black; */
+      }
+      .sec-sub {
+        width: 100%;
+        height: 480vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        border: none;
+      }
+      .s1 {
+        width: 80%;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border: none;
+      }
+      .s1-bx {
+        width: 30%;
+        height: 31vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid red; */
+      }
+      .s1-bx-sub {
+        width: 80%;
+        height: 25vh;
+        text-align: center;
+        padding: 50px 30px;
+        color: white;
+        background-color: rgba(34, 34, 34, 0.75);
+        /* border: 1px solid blue; */
+      }
+      .s1-bx-sub:hover {
+        transition: 1s;
+        background-color: rgba(49, 80, 253, 0.75);
+      }
+      #cat-pos3 {
+        background: url(img/cat-post-3.jpg.webp);
+        background-position: center;
+        background-size: cover;
+      }
+      #cat-pos2 {
+        background: url(img/cat-post-2.jpg.webp);
+        background-position: center;
+        background-size: cover;
+      }
+      #cat-pos1 {
+        background: url(img/cat-post-1.jpg.webp);
+        background-position: center;
+        background-size: cover;
+      }
+
+      /* -------------------------------------------------- */
+      .s2 {
+        width: 80%;
+        height: 410vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border: none;
+      }
+      .s2-sub1 {
+        width: 70%;
+        height: 100%;
+        border: none;
+      }
+      .s2-sub1-bx {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+      }
+      .s2-sub1-bx-1 {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid black; */
+      }
+      .s2-sub1-bx-2 {
+        width: 75%;
+        height: 100%;
+        /* border: 1px solid black; */
+      }
+      .s2-sub1-bx-2-sub1 {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid blue; */
+      }
+      .s2-sub1-bx-2-sub2 {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid blue; */
+      }
+      .s2-imgbx {
+        width: 95%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid black; */
+      }
+      .s2-details-bx {
+        width: 95%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* border: 1px solid black; */
+      }
+      .s2-imgbx img {
+        width: 100%;
+        height: 100%;
+      }
+      .s2-details-bx p {
+        font-size: 0.8rem;
+      }
+      .s2-details-bx h3:hover {
+        color: #384aeb;
+        cursor: pointer;
+      }
+      .s2-imgbx-btn {
+        width: 150px;
+        height: 40px;
+        font-weight: bold;
+        border-radius: 0%;
+        background-color: #f1f6f7;
+      }
+      .s2-imgbx-btn:hover {
+        background-color: #384aeb;
+        color: white;
+      }
+      .s2-sub1-bx-1-dd {
+        width: 80%;
+        height: 60vh;
+        padding: 50px 15px;
+        /* border: 1px solid black; */
+      }
+      .s2-sub1-bx-1-dd i:hover {
+        color: #384aeb;
+      }
+      span {
+        color: gray;
+      }
+      span:hover {
+        color: #384aeb;
+        cursor: pointer;
+      }
+      .s2-sub2 {
+        width: 30%;
+        height: 100%;
+        border: none;
+      }
+      .s2-sub2-bx1 {
+        width: 80%;
+        height: 15vh;
+        margin-left: 10%;
+        border: 1px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container border border-0">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png.webp" alt="" class="border border-0 m-4" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse border border-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  shop
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="Shop_Category.html"
+                      >Shop Category</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Product_Details.html"
+                      >Product Details</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Product_Checkout.html"
+                      >Product Checkout</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Confirmation.html"
+                      >Confirmation</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Shopping_Cart.html"
+                      >Shopping Cart</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Register.html">Register</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Tracking.html">Tracking</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="con_form.html">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-1 mb-2 mb-lg-0 ms-auto border border-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="fa-solid fa-magnifying-glass fs-5"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-cart-shopping fs-5"></i>
+                </a>
+              </li>
+            </ul>
+            <ul
+              class="navbar-nav me-auto w-auto mb-2 mb-lg-0 ms-0 border border-0"
+            >
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <button
+                    class="btn btn-light text-dark border border-1 rounded-pill"
+                    id="firstbtn"
+                  >
+                    Buy Now
+                  </button>
+                  <!-- ------------------------------------ -->
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ------------------------------------------------------------------- -->
+    <section class="main">
+      <h1>Our Blog</h1>
+      <p>Home-Blog</p>
+    </section>
+    <!-- ------------------------------------------------------------------- -->
+    <section class="sec-sub">
+      <div class="s1">
+        <div class="s1-bx" id="cat-pos3">
+          <div class="s1-bx-sub">
+            <h5>SOCIAL LIFE</h5>
+            <hr />
+            <h6>Enjoy your social life together</h6>
+          </div>
+        </div>
+        <div class="s1-bx" id="cat-pos2">
+          <div class="s1-bx-sub">
+            <h5>POLITICS</h5>
+            <hr />
+            <h6>Be a part of politics</h6>
+          </div>
+        </div>
+        <div class="s1-bx" id="cat-pos1">
+          <div class="s1-bx-sub">
+            <h5>FOOD</h5>
+            <hr />
+            <h6>Let the food be finished</h6>
+          </div>
+        </div>
+      </div>
+      <div class="s2">
+        <div class="s2-sub1">
+          <div class="s2-sub1-bx">
+            <div class="s2-sub1-bx-1">
+              <div class="s2-sub1-bx-1-dd">
+                <p>
+                  Food,
+                  <a href="#" style="text-decoration: none"> Technology </a>,
+                  Politics, Lifestyle
+                </p>
+                <p>
+                  <span> Mark wiens </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-user"></i>
+                </p>
+                <p>
+                  <span> 12 Dec, 2017 </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-calendar-days"></i>
+                </p>
+                <p>
+                  <span> 1.2M Views </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-eye"></i>
+                </p>
+                <p>
+                  <span> 06 Comments </span> &nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-comment"></i>
+                </p>
+              </div>
+            </div>
+            <div class="s2-sub1-bx-2">
+              <div class="s2-sub1-bx-2-sub1">
+                <div class="s2-imgbx">
+                  <img src="img/m-blog-1.jpg.webp" alt="" />
+                </div>
+              </div>
+              <div class="s2-sub1-bx-2-sub2">
+                <div class="s2-details-bx">
+                  <h3>Astronomy Binoculars A Great Alternative</h3>
+                  <p>
+                    MCSE boot camps have its supporters and its detractors. Some
+                    people do not understand why you should have to spend money
+                    on boot camp when you can get the MCSE study materials
+                    yourself at a fraction.
+                  </p>
+                  <button class="btn s2-imgbx-btn border border-1">
+                    View More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="s2-sub1-bx">
+            <div class="s2-sub1-bx-1">
+              <div class="s2-sub1-bx-1-dd">
+                <p>
+                  Food,
+                  <a href="#" style="text-decoration: none"> Technology </a>,
+                  Politics, Lifestyle
+                </p>
+                <p>
+                  <span> Mark wiens </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-user"></i>
+                </p>
+                <p>
+                  <span> 12 Dec, 2017 </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-calendar-days"></i>
+                </p>
+                <p>
+                  <span> 1.2M Views </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-eye"></i>
+                </p>
+                <p>
+                  <span> 06 Comments </span> &nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-comment"></i>
+                </p>
+              </div>
+            </div>
+            <div class="s2-sub1-bx-2">
+              <div class="s2-sub1-bx-2-sub1">
+                <div class="s2-imgbx">
+                  <img src="img/m-blog-2.jpg.webp" alt="" />
+                </div>
+              </div>
+              <div class="s2-sub1-bx-2-sub2">
+                <div class="s2-details-bx">
+                  <h3>The Basics Of Buying A Telescope</h3>
+                  <p>
+                    MCSE boot camps have its supporters and its detractors. Some
+                    people do not understand why you should have to spend money
+                    on boot camp when you can get the MCSE study materials
+                    yourself at a fraction.
+                  </p>
+                  <button class="btn s2-imgbx-btn border border-1">
+                    View More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="s2-sub1-bx">
+            <div class="s2-sub1-bx-1">
+              <div class="s2-sub1-bx-1-dd">
+                <p>
+                  Food,
+                  <a href="#" style="text-decoration: none"> Technology </a>,
+                  Politics, Lifestyle
+                </p>
+                <p>
+                  <span> Mark wiens </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-user"></i>
+                </p>
+                <p>
+                  <span> 12 Dec, 2017 </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-calendar-days"></i>
+                </p>
+                <p>
+                  <span> 1.2M Views </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-eye"></i>
+                </p>
+                <p>
+                  <span> 06 Comments </span> &nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-comment"></i>
+                </p>
+              </div>
+            </div>
+            <div class="s2-sub1-bx-2">
+              <div class="s2-sub1-bx-2-sub1">
+                <div class="s2-imgbx">
+                  <img src="img/m-blog-3.jpg.webp" alt="" />
+                </div>
+              </div>
+              <div class="s2-sub1-bx-2-sub2">
+                <div class="s2-details-bx">
+                  <h3>The Glossary Of Telescopes</h3>
+                  <p>
+                    MCSE boot camps have its supporters and its detractors. Some
+                    people do not understand why you should have to spend money
+                    on boot camp when you can get the MCSE study materials
+                    yourself at a fraction.
+                  </p>
+                  <button class="btn s2-imgbx-btn border border-1">
+                    View More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="s2-sub1-bx">
+            <div class="s2-sub1-bx-1">
+              <div class="s2-sub1-bx-1-dd">
+                <p>
+                  Food,
+                  <a href="#" style="text-decoration: none"> Technology </a>,
+                  Politics, Lifestyle
+                </p>
+                <p>
+                  <span> Mark wiens </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-user"></i>
+                </p>
+                <p>
+                  <span> 12 Dec, 2017 </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-calendar-days"></i>
+                </p>
+                <p>
+                  <span> 1.2M Views </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-eye"></i>
+                </p>
+                <p>
+                  <span> 06 Comments </span> &nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-comment"></i>
+                </p>
+              </div>
+            </div>
+            <div class="s2-sub1-bx-2">
+              <div class="s2-sub1-bx-2-sub1">
+                <div class="s2-imgbx">
+                  <img src="img/m-blog-4.jpg.webp" alt="" />
+                </div>
+              </div>
+              <div class="s2-sub1-bx-2-sub2">
+                <div class="s2-details-bx">
+                  <h3>The Night Sky</h3>
+                  <p>
+                    MCSE boot camps have its supporters and its detractors. Some
+                    people do not understand why you should have to spend money
+                    on boot camp when you can get the MCSE study materials
+                    yourself at a fraction.
+                  </p>
+                  <button class="btn s2-imgbx-btn border border-1">
+                    View More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="s2-sub1-bx">
+            <div class="s2-sub1-bx-1">
+              <div class="s2-sub1-bx-1-dd">
+                <p>
+                  Food,
+                  <a href="#" style="text-decoration: none"> Technology </a>,
+                  Politics, Lifestyle
+                </p>
+                <p>
+                  <span> Mark wiens </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-user"></i>
+                </p>
+                <p>
+                  <span> 12 Dec, 2017 </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-calendar-days"></i>
+                </p>
+                <p>
+                  <span> 1.2M Views </span>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-eye"></i>
+                </p>
+                <p>
+                  <span> 06 Comments </span> &nbsp;&nbsp;&nbsp;
+                  <i class="fa-solid fa-comment"></i>
+                </p>
+              </div>
+            </div>
+            <div class="s2-sub1-bx-2">
+              <div class="s2-sub1-bx-2-sub1">
+                <div class="s2-imgbx">
+                  <img src="img/m-blog-5.jpg.webp" alt="" />
+                </div>
+              </div>
+              <div class="s2-sub1-bx-2-sub2">
+                <div class="s2-details-bx">
+                  <h3>Telescopes 101</h3>
+                  <p>
+                    MCSE boot camps have its supporters and its detractors. Some
+                    people do not understand why you should have to spend money
+                    on boot camp when you can get the MCSE study materials
+                    yourself at a fraction.
+                  </p>
+                  <button class="btn s2-imgbx-btn border border-1">
+                    View More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="s2-sub2">
+          <div class="s2-sub2-bx1"></div>
+          <div class="s2-sub2-bx2"></div>
+          <div class="s2-sub2-bx3"></div>
+        </div> -->
+      </div>
+    </section>
+    <!-- ---------------------------------------------------- -->
+    <footer>
+      <div class="f-sub container">
+        <div class="f-bx-main row">
+          <div class="f-bx col-lg-3 col-md-6 col-sm-12">
+            <h1 class="text-light">Our Mission</h1>
+            <br />
+            <p class="text-light">
+              So seed seed green that winged cattle in. Gathering thing made fly
+              you're no divided deep moved us lan Gathering thing us land years
+              living.
+            </p>
+            <p class="text-light">
+              So seed seed green that winged cattle in. Gathering thing made fly
+              you're no divided deep moved
+            </p>
+          </div>
+          <div
+            class="f-bx col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4 class="text-light">Quick Links</h4>
+            <br />
+            <ul>
+              <li><a href="#" class="text-light">Home</a></li>
+              <li><a href="#" class="text-light">Shop</a></li>
+              <li><a href="#" class="text-light">Blog</a></li>
+              <li><a href="#" class="text-light">Product</a></li>
+              <li><a href="#" class="text-light">Brand</a></li>
+              <li><a href="#" class="text-light">Contact</a></li>
+            </ul>
+          </div>
+          <div
+            class="f-bx col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4 class="text-light">Gallery</h4>
+            <br />
+            <div class="f-bx-imgbx">
+              <div class="f-img-bx" id="f-img1"></div>
+              <div class="f-img-bx" id="f-img2"></div>
+              <div class="f-img-bx" id="f-img3"></div>
+              <div class="f-img-bx" id="f-img4"></div>
+              <div class="f-img-bx" id="f-img5"></div>
+              <div class="f-img-bx" id="f-img6"></div>
+            </div>
+          </div>
+          <div
+            class="f-bx col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4 class="text-light">Contact Us</h4>
+            <div class="f-bx-imgbx-last">
+              <div class="f-icon-area">
+                <div class="f-icobx">
+                  <img src="img/iconmonstr-paper-plane-1-240.png" alt="" />
+                </div>
+                <div class="f-i-conbx">
+                  <h5 class="text-light">Head Office</h5>
+                  <p class="text-light">123, Main Street, Your City</p>
+                </div>
+              </div>
+              <div class="f-icon-area">
+                <div class="f-icobx">
+                  <img src="img/iconmonstr-phone-3-240.png" alt="" />
+                </div>
+                <div class="f-i-conbx">
+                  <h5 class="text-light">Phone Number</h5>
+                  <p class="text-light">+123 456 7890</p>
+                  <p class="text-light">+123 456 7890</p>
+                </div>
+              </div>
+              <div class="f-icon-area">
+                <div class="f-icobx">
+                  <img src="img/iconmonstr-email-1-240.png" alt="" />
+                </div>
+                <div class="f-i-conbx">
+                  <h5 class="text-light">Email</h5>
+                  <p class="text-light">free@infoexample.com</p>
+                  <p class="text-light">www.infoexample.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ------------------------------------------- -->
+    <footer class="foot-dev-name">
+      <p><b>YASH DUNGARIYA</b></p>
+    </footer>
+  </body>
+</html>

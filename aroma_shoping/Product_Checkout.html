@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- MEDIA FILE -->
+    <link rel="stylesheet" href="media.css" />
+    <!-- FONT-AWSOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <!-- GOOGLE FONTS CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caudex&family=Kanit:wght@500&family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQUERY CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <!-- ANIMETED CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- WOW CDN -->
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <!-- WEB SITE LINK -->
+    <link
+      rel="stylesheet"
+      href="https://preview.colorlib.com/theme/aroma/single-product.html"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>AROMA-Product Details</title>
+    <style>
+      .main {
+        width: 100%;
+        height: 45vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #f1f6f7;
+        /* border: 1px solid black; */
+      }
+      .sec-sub {
+        width: 100%;
+        height: 205vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        /* border: 1px solid black; */
+      }
+      .sec1 {
+        width: 80%;
+        height: 68vh;
+        /* border: 1px solid black; */
+      }
+      .s1bx1 {
+        width: 100%;
+        height: 6vh;
+        padding: 10px;
+        margin: 8px 0px;
+        background-color: #f1f6f7;
+        border: none;
+      }
+      .s1bx2 {
+        width: 100%;
+        height: 6vh;
+        padding: 10px;
+        margin: 8px 0px;
+        border: none;
+      }
+      .s1bx3 {
+        width: 100%;
+        height: 8vh;
+        padding: 10px;
+        margin: 8px 0px;
+        border: none;
+      }
+      .s1bx3 input {
+        width: 350px;
+        margin: 0px 3px;
+        float: left;
+        border-radius: 0%;
+      }
+      .s1bx4 {
+        width: 100%;
+        height: 8vh;
+        padding: 10px;
+        margin: 8px 0px;
+        border: none;
+      }
+      .s1bx4-btn {
+        width: 140px;
+        height: 45px;
+        background-color: #384aeb;
+        color: white;
+        float: left;
+        font-weight: bold;
+      }
+      .s1bx4-btn:hover {
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        border: 1px solid #384aeb;
+      }
+      .s1bx4-sub {
+        width: 155px;
+        height: 40px;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 10px;
+      }
+      .s1bx5 {
+        width: 100%;
+        height: 6vh;
+        padding: 10px;
+        margin: 8px 0px;
+        border: none;
+      }
+      .s1bx5 p {
+        cursor: pointer;
+      }
+      .s1bx6 {
+        width: 100%;
+        height: 6vh;
+        padding: 10px;
+        margin: 8px 0px;
+        background-color: #f1f6f7;
+        border: none;
+      }
+      .s1bx7 {
+        width: 100%;
+        height: 8vh;
+        padding: 10px;
+        margin: 8px 0px;
+        border: none;
+      }
+      .s1bx7 input {
+        width: 500px;
+        border-radius: 0%;
+      }
+      .s1bx8 {
+        width: 100%;
+        height: 8vh;
+        padding: 10px;
+        margin: 8px 0px;
+        border: none;
+      }
+      .s1bx8-btn {
+        width: 190px;
+        height: 45px;
+        background-color: #384aeb;
+        color: white;
+        font-weight: bold;
+      }
+      .s1bx8-btn:hover {
+        background-color: white;
+        color: black;
+        font-weight: bold;
+        border: 1px solid #384aeb;
+      }
+      /* ------------------------------------------- */
+      .sec2 {
+        width: 80%;
+        height: 128vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border: 1px solid red; */
+      }
+      .sec2-sub1 {
+        width: 55%;
+        height: 120vh;
+        border: none;
+      }
+
+      .s2bx1 {
+        width: 100%;
+        height: 5vh;
+        border: none;
+        border-bottom: 1px solid rgb(218, 218, 218);
+      }
+      .s2bx2 {
+        width: 100%;
+        height: 8vh;
+        border: none;
+      }
+      .s2bx2 input {
+        width: 330px;
+        float: left;
+        margin: 16px 5px;
+      }
+      .s2bx3 {
+        width: 100%;
+        height: 8vh;
+        border: none;
+      }
+      .s2bx3 input {
+        width: 98%;
+        margin: 5px;
+      }
+      .s2bx4 {
+        width: 100%;
+        height: 8vh;
+        border: none;
+      }
+      .s2bx4 select {
+        width: 98%;
+        margin: 5px;
+      }
+      .s2bx5 {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        border: none;
+      }
+      .s2bx5 input {
+        margin: 5px;
+      }
+      .s2bx5 label {
+        margin: 5px;
+      }
+      .s2bx6 {
+        width: 100%;
+        height: 20vh;
+        padding: 5px;
+        border: none;
+      }
+      .sec2-sub2 {
+        width: 38%;
+        height: 120vh;
+        display: flex;
+        justify-content: center;
+        border: none;
+      }
+      .sec2-sub2-order_card {
+        width: 440px;
+        height: 90%;
+        margin-top: 10px;
+        padding: 20px;
+        background-color: #e3eaed;
+        border: none;
+      }
+      .s2sub2bx1 {
+        width: 98%;
+        height: 6vh;
+        border: none;
+      }
+      .s2sub2bx2 {
+        width: 98%;
+        height: 6vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: none;
+      }
+      .s2sub2bx2 p {
+        margin: 5px;
+      }
+      span {
+        color: gray;
+      }
+      .s2sub2bx3 {
+        width: 98%;
+        height: 43vh;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: none;
+      }
+      .s2sub2bx3-fbx {
+        width: 95%;
+        height: 13vh;
+        padding: 10px;
+        background-color: white;
+        border: none;
+      }
+      .s2sub2bx3-fbx-1 {
+        width: 95%;
+        height: 10vh;
+        padding: 10px;
+        background-color: white;
+        border: none;
+      }
+      .s2sub2bx3-fbx p {
+        font-size: 0.9rem;
+      }
+      .s2sub2bx3-fbx-1 p {
+        font-size: 0.9rem;
+      }
+      .paypal {
+        width: 80px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        border: none;
+      }
+      .paypal img {
+        width: 80%;
+        height: 80%;
+      }
+      .s2sub2bx4 {
+        width: 98%;
+        height: 12vh;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: none;
+      }
+      .s2sub2bx4-btn {
+        width: 80%;
+        color: white;
+        font-weight: bold;
+        background-color: #384aeb;
+      }
+      .s2sub2bx4-btn:hover {
+        color: black;
+        background-color: white;
+        border: 1px solid #384aeb;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container border border-0">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png.webp" alt="" class="border border-0 m-4" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse border border-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  shop
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="Shop_Category.html"
+                      >Shop Category</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Product_Details.html"
+                      >Product Details</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Product_Checkout.html"
+                      >Product Checkout</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Confirmation.html"
+                      >Confirmation</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Shopping_Cart.html"
+                      >Shopping Cart</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Login</a></li>
+                  <li>
+                    <a class="dropdown-item" href="Register.html">Register</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Tracking.html">Tracking</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="con_form.html">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-1 mb-2 mb-lg-0 ms-auto border border-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="fa-solid fa-magnifying-glass fs-5"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-cart-shopping fs-5"></i>
+                </a>
+              </li>
+            </ul>
+            <ul
+              class="navbar-nav me-auto w-auto mb-2 mb-lg-0 ms-0 border border-0"
+            >
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <button
+                    class="btn btn-light text-dark border border-1 rounded-pill"
+                    id="firstbtn"
+                  >
+                    Buy Now
+                  </button>
+                  <!-- ------------------------------------ -->
+
+                  <!-- ------------------------------------ -->
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ------------------------------------------------------------------- -->
+    <section class="main">
+      <h1>Product Checkout</h1>
+      <p>Home-Checkout</p>
+    </section>
+    <!-- ------------------------------------------------------------------- -->
+    <section class="sec-sub">
+      <div class="sec1">
+        <div class="s1bx1">
+          <p>Returning Customer? <a href="#">Click here to login</a></p>
+        </div>
+        <div class="s1bx2">
+          <p>
+            If you have shopped with us before, please enter your details in the
+            boxes below. If you are a new customer, please proceed to the
+            Billing & Shipping section.
+          </p>
+        </div>
+        <div class="s1bx3">
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Username or Email*"
+          />
+          <input
+            type="password"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Password*"
+          />
+        </div>
+        <div class="s1bx4">
+          <button class="btn rounded-pill s1bx4-btn" id="firstbtn">
+            login
+          </button>
+          <div class="s1bx4-sub">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Remember me
+            </label>
+          </div>
+        </div>
+        <div class="s1bx5">
+          <p>Lost your password?</p>
+        </div>
+        <div class="s1bx6">
+          <p>Have a coupon? <a href="#"> Click here to enter your code</a></p>
+        </div>
+        <div class="s1bx7">
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Enter coupon code"
+          />
+        </div>
+        <div class="s1bx8">
+          <button class="btn rounded-pill s1bx8-btn" id="firstbtn">
+            Apply Coupon
+          </button>
+        </div>
+      </div>
+      <div class="sec2">
+        <div class="sec2-sub1">
+          <div class="s2bx1">
+            <p class="fs-5"><b>Billing Details</b></p>
+          </div>
+          <div class="s2bx2">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+          </div>
+          <div class="s2bx3">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Company name"
+            />
+          </div>
+          <div class="s2bx2">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+          </div>
+          <div class="s2bx4">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Country</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="s2bx3">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+          </div>
+          <div class="s2bx3">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+          </div>
+          <div class="s2bx3">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+            />
+          </div>
+          <div class="s2bx4">
+            <select class="form-select" aria-label="Default select example">
+              <option selected>District</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="s2bx3">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Postcode/ZIP"
+            />
+          </div>
+          <div class="s2bx5">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+            />
+            <label class="form-check-label" for="flexCheckChecked">
+              Create an account?
+            </label>
+          </div>
+          <br />
+          <div class="s2bx1">
+            <p class="fs-5"><b>Shipping Details</b></p>
+          </div>
+          <div class="s2bx5">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckChecked"
+            />
+            <label class="form-check-label" for="flexCheckChecked">
+              Ship to a different address?
+            </label>
+          </div>
+          <div class="s2bx6">
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="5"
+              placeholder="order note"
+            ></textarea>
+          </div>
+        </div>
+        <div class="sec2-sub2">
+          <div class="sec2-sub2-order_card">
+            <div class="s2sub2bx1">
+              <p><b>Your Order</b></p>
+            </div>
+            <div class="s2sub2bx2">
+              <p>Product</p>
+              <p>Total</p>
+            </div>
+            <div class="s2sub2bx2">
+              <span> <p>Fresh Blackberry</p> </span>
+              <p>x 02</p>
+              <span><p>$720.00</p></span>
+            </div>
+            <div class="s2sub2bx2">
+              <span><p>Fresh Tomatoes</p></span>
+              <p>x 02</p>
+              <span><p>$720.00</p></span>
+            </div>
+            <div class="s2sub2bx2">
+              <span><p>Fresh Brocoli</p></span>
+              <p>x 02</p>
+              <span><p>$720.00</p></span>
+            </div>
+            <div class="s2sub2bx2">
+              <p>SUBTOTAL</p>
+              <span><p>$2160.00</p></span>
+            </div>
+            <div class="s2sub2bx2">
+              <p>SHIPPING</p>
+              <span><p>Flat Rate: $50.00</p></span>
+            </div>
+            <div class="s2sub2bx2">
+              <p>TOTAL</p>
+              <p>$2210.00</p>
+            </div>
+            <div class="s2sub2bx3">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                  checked
+                />
+                <label class="form-check-label mb-3" for="flexRadioDefault1">
+                  Check Payments
+                </label>
+              </div>
+              <div class="s2sub2bx3-fbx">
+                <p>
+                  Please send a check to Store Name, Store Street, Store Town,
+                  Store State / County, Store Postcode.
+                </p>
+              </div>
+              <br />
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                />
+                <label class="form-check-label mb-3" for="flexRadioDefault2">
+                  Paypal
+                </label>
+                <div class="paypal float-end">
+                  <img src="img/card.jpg.webp" alt="" />
+                </div>
+              </div>
+              <div class="s2sub2bx3-fbx-1">
+                <p>
+                  Pay via PayPal; you can pay with your credit card if you don’t
+                  have a PayPal account.
+                </p>
+              </div>
+              <br />
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  I’ve read and accept the <a href="#"> terms & conditions*</a>
+                </label>
+              </div>
+            </div>
+            <div class="s2sub2bx4">
+              <button class="btn rounded-pill s2sub2bx4-btn" id="firstbtn">
+                Proceed to Paypal
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------------------------------- -->
+    <footer>
+      <div class="f-sub container">
+        <div class="f-bx-main row">
+          <div class="f-bx col-lg-3 col-md-6 col-sm-12">
+            <h1 class="text-light">Our Mission</h1>
+            <br />
+            <p class="text-light">
+              So seed seed green that winged cattle in. Gathering thing made fly
+              you're no divided deep moved us lan Gathering thing us land years
+              living.
+            </p>
+            <p class="text-light">
+              So seed seed green that winged cattle in. Gathering thing made fly
+              you're no divided deep moved
+            </p>
+          </div>
+          <div
+            class="f-bx col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4 class="text-light">Quick Links</h4>
+            <br />
+            <ul>
+              <li><a href="#" class="text-light">Home</a></li>
+              <li><a href="#" class="text-light">Shop</a></li>
+              <li><a href="#" class="text-light">Blog</a></li>
+              <li><a href="#" class="text-light">Product</a></li>
+              <li><a href="#" class="text-light">Brand</a></li>
+              <li><a href="#" class="text-light">Contact</a></li>
+            </ul>
+          </div>
+          <div
+            class="f-bx col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4 class="text-light">Gallery</h4>
+            <br />
+            <div class="f-bx-imgbx">
+              <div class="f-img-bx" id="f-img1"></div>
+              <div class="f-img-bx" id="f-img2"></div>
+              <div class="f-img-bx" id="f-img3"></div>
+              <div class="f-img-bx" id="f-img4"></div>
+              <div class="f-img-bx" id="f-img5"></div>
+              <div class="f-img-bx" id="f-img6"></div>
+            </div>
+          </div>
+          <div
+            class="f-bx col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4 class="text-light">Contact Us</h4>
+            <div class="f-bx-imgbx-last">
+              <div class="f-icon-area">
+                <div class="f-icobx">
+                  <img src="img/iconmonstr-paper-plane-1-240.png" alt="" />
+                </div>
+                <div class="f-i-conbx">
+                  <h5 class="text-light">Head Office</h5>
+                  <p class="text-light">123, Main Street, Your City</p>
+                </div>
+              </div>
+              <div class="f-icon-area">
+                <div class="f-icobx">
+                  <img src="img/iconmonstr-phone-3-240.png" alt="" />
+                </div>
+                <div class="f-i-conbx">
+                  <h5 class="text-light">Phone Number</h5>
+                  <p class="text-light">+123 456 7890</p>
+                  <p class="text-light">+123 456 7890</p>
+                </div>
+              </div>
+              <div class="f-icon-area">
+                <div class="f-icobx">
+                  <img src="img/iconmonstr-email-1-240.png" alt="" />
+                </div>
+                <div class="f-i-conbx">
+                  <h5 class="text-light">Email</h5>
+                  <p class="text-light">free@infoexample.com</p>
+                  <p class="text-light">www.infoexample.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ------------------------------------------- -->
+    <footer class="foot-dev-name">
+      <p><b>YASH DUNGARIYA</b></p>
+    </footer>
+  </body>
+</html>

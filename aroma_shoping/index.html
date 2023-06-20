@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- MEDIA FILE -->
+    <link rel="stylesheet" href="media.css" />
+    <!-- FONT-AWSOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- GOOGLE FONTS CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caudex&family=Kanit:wght@500&family=Roboto+Condensed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQUERY CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <!-- ANIMETED CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- WOW CDN -->
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <!-- WEB SITE LINK -->
+    <link
+      rel="stylesheet"
+      href="https://preview.colorlib.com/theme/aroma/index.html"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>AROMA</title>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png.webp" alt="" class="m-4" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  shop
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="Shop_Category.html"
+                      >Shop Category</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Product_Details.html"
+                      >Product Details</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Product_Checkout.html"
+                      >Product Checkout</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Confirmation.html"
+                      >Confirmation</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Shopping_Cart.html"
+                      >Shopping Cart</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Login</a></li>
+                  <li><a class="dropdown-item" href="#">Register</a></li>
+                  <li><a class="dropdown-item" href="#">Tracking</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="con_form.html">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-1 mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="fa-solid fa-magnifying-glass fs-5"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-cart-shopping fs-5"></i>
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-auto w-auto mb-2 mb-lg-0 ms-0">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <button
+                    class="btn btn-light text-dark border border-1 rounded-pill"
+                    id="firstbtn"
+                  >
+                    Buy Now
+                  </button>
+                  <!-- ------------------------------------ -->
+                  <div
+                    class="modal fade"
+                    id="exampleModalToggle"
+                    aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel"
+                    tabindex="-1"
+                  >
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1
+                            class="modal-title fs-5"
+                            id="exampleModalToggleLabel"
+                          >
+                            Login Form
+                          </h1>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label"
+                                >Email address</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control"
+                                placeholder="Enter Your Email Id"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                              />
+                              <div id="emailHelp" class="form-text">
+                                We'll never share your email with anyone else.
+                              </div>
+                            </div>
+                            <div class="mb-3">
+                              <label
+                                for="exampleInputPassword1"
+                                class="form-label"
+                                >Password</label
+                              >
+                              <input
+                                type="password"
+                                class="form-control"
+                                placeholder="Enter Your Password"
+                                id="exampleInputPassword1"
+                              />
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="exampleCheck1"
+                              />
+                              <label
+                                class="form-check-label"
+                                for="exampleCheck1"
+                                >Check me out</label
+                              >
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                              Submit
+                            </button>
+                          </form>
+                        </div>
+                        <div class="modal-footer"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button
+                    class="btn btn-light text-dark border border-1 rounded-pill"
+                    data-bs-target="#exampleModalToggle"
+                    data-bs-toggle="modal"
+                    id="firstbtn"
+                  >
+                    Login
+                  </button>
+                  <!-- ------------------------------------ -->
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ------------------------------------ -->
+    <section class="sec-1" id="home">
+      <div class="sec-1-sub">
+        <div class="s1-banner1"></div>
+        <div class="s1-banner2"></div>
+        <div class="s1-banner3">
+          <div class="s1-img-bx">
+            <img src="img/hero-banner.png.webp" alt="" />
+          </div>
+          <div class="s1-con-bx">
+            <h5>Shop is fun</h5>
+            <h1>
+              BROWSE OUR <br />
+              PREMIUM PRODUCT
+            </h1>
+            <p>
+              Us which over of signs divide dominion deep fill bring they're
+              meat beho upon own earth without morning over third. Their male
+              dry. They are great appear whose land fly grass.
+            </p>
+            <button class="btn rounded-pill" id="s1btn">Browse Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------ -->
+    <section class="sec-2">
+      <div class="s2-sub row">
+        <div class="s2-box col-lg-4 col-md-4 col-sm-12">
+          <img src="img/hero-slide1.png.webp" alt="" />
+          <div class="s2-accbx">
+            <h5>Wireless Headphone</h5>
+            <h6>Accessories Item</h6>
+          </div>
+        </div>
+        <div class="s2-box col-lg-4 col-md-4 col-sm-12">
+          <img src="img/hero-slide2.png.webp" alt="" />
+          <div class="s2-accbx">
+            <h5>Wireless Headphone</h5>
+            <h6>Accessories Item</h6>
+          </div>
+        </div>
+        <div class="s2-box col-lg-4 col-md-4 col-sm-12">
+          <img src="img/hero-slide3.png.webp" alt="" />
+          <div class="s2-accbx">
+            <h5>Wireless Headphone</h5>
+            <h6>Accessories Item</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------- -->
+    <section class="sec-3">
+      <div class="s3-sub container">
+        <div class="s3-main-bx">
+          <div class="s3-child1">
+            <p>Popular Item in the market</p>
+            <h2>Trending Product</h2>
+          </div>
+          <div class="s3-child2 row">
+            <div
+              class="card col-lg-3 col-md-6 col-sm-12"
+              style="width: 18rem"
+              id="s3card"
+            >
+              <img src="img/product1.png.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-text text-center">
+                  <p>Accessories</p>
+                  <h5>Quartz Belt Watch</h5>
+                  <h6>$150.00</h6>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card col-lg-3 col-md-6 col-sm-12"
+              style="width: 18rem"
+              id="s3card"
+            >
+              <img src="img/product2.png.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-text text-center">
+                  <p>Beauty</p>
+                  <h5>Women Freshwash</h5>
+                  <h6>$130.00</h6>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card col-lg-3 col-md-6 col-sm-12"
+              style="width: 18rem"
+              id="s3card"
+            >
+              <img src="img/product3.png.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-text text-center">
+                  <p>Decor</p>
+                  <h5>Room Flash Light</h5>
+                  <h6>$140.00</h6>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card col-lg-3 col-md-6 col-sm-12"
+              style="width: 18rem"
+              id="s3card"
+            >
+              <img src="img/product4.png.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-text text-center">
+                  <p>Decor</p>
+                  <h5>Quartz Bag</h5>
+                  <h6>$110.00</h6>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card col-lg-3 col-md-6 col-sm-12"
+              style="width: 18rem"
+              id="s3card"
+            >
+              <img src="img/product5.png.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-text text-center">
+                  <p>Accessories</p>
+                  <h5>Man Office Bag</h5>
+                  <h6>$169.00</h6>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card col-lg-3 col-md-6 col-sm-12"
+              style="width: 18rem"
+              id="s3card"
+            >
+              <img src="img/product6.png.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-text text-center">
+                  <p>Kids Toy</p>
+                  <h5>Charging Car</h5>
+                  <h6>$170.00</h6>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card col-lg-3 col-md-6 col-sm-12"
+              style="width: 18rem"
+              id="s3card"
+            >
+              <img src="img/product7.png.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-text text-center">
+                  <p>Accessories</p>
+                  <h5>Blutooth Speaker</h5>
+                  <h6>$180.00</h6>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card col-lg-3 col-md-6 col-sm-12"
+              style="width: 18rem"
+              id="s3card"
+            >
+              <img src="img/product8.png.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-text text-center">
+                  <p>Accessories</p>
+                  <h5>Charging</h5>
+                  <h6>$166.00</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------- -->
+    <section class="sec-4">
+      <div class="s4-box">
+        <h1>Up To 50% Off</h1>
+        <h4>Winter Sale</h4>
+        <p>Him she'd let them sixth saw light</p>
+        <button class="btn rounded-pill" id="s4tbtn">
+          <b> Shop Now </b>
+        </button>
+      </div>
+    </section>
+    <!-- ------------------------- --------------------->
+    <section class="sec-5">
+      <div class="s5-sub container">
+        <div class="s5-box1">
+          <p>Popular Item in the market</p>
+          <h1>Best Sellers</h1>
+        </div>
+        <div class="s5-box2">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card border-0" style="width: 18rem">
+                  <img
+                    src="img/product1.png.webp"
+                    class="card-img-top"
+                    alt="..."
+                    id="swi-img"
+                  />
+                  <div class="card-body">
+                    <div class="card-text text-center">
+                      <p>Accessories</p>
+                      <h5>Quartz Belt Watch</h5>
+                      <h6>$150.00</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0" style="width: 18rem">
+                  <img
+                    src="img/product2.png.webp"
+                    class="card-img-top"
+                    alt="..."
+                    id="swi-img"
+                  />
+                  <div class="card-body">
+                    <div class="card-text text-center">
+                      <p>Accessories</p>
+                      <h5>Women Freshwash</h5>
+                      <h6>$150.00</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0" style="width: 18rem">
+                  <img
+                    src="img/product3.png.webp"
+                    class="card-img-top"
+                    alt="..."
+                    id="swi-img"
+                  />
+                  <div class="card-body">
+                    <div class="card-text text-center">
+                      <p>Accessories</p>
+                      <h5>Room Flash Light</h5>
+                      <h6>$150.00</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0" style="width: 18rem">
+                  <img
+                    src="img/product4.png.webp"
+                    class="card-img-top"
+                    alt="..."
+                    id="swi-img"
+                  />
+                  <div class="card-body">
+                    <div class="card-text text-center">
+                      <p>Accessories</p>
+                      <h5>Quartz Bag</h5>
+                      <h6>$150.00</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0" style="width: 18rem">
+                  <img
+                    src="img/product5.png.webp"
+                    class="card-img-top"
+                    alt="..."
+                    id="swi-img"
+                  />
+                  <div class="card-body">
+                    <div class="card-text text-center">
+                      <p>Accessories</p>
+                      <h5>Man Office Bag</h5>
+                      <h6>$150.00</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0" style="width: 18rem">
+                  <img
+                    src="img/product6.png.webp"
+                    class="card-img-top"
+                    alt="..."
+                    id="swi-img"
+                  />
+                  <div class="card-body">
+                    <div class="card-text text-center">
+                      <p>Accessories</p>
+                      <h5>Charging Car</h5>
+                      <h6>$150.00</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0" style="width: 18rem">
+                  <img
+                    src="img/product7.png.webp"
+                    class="card-img-top"
+                    alt="..."
+                    id="swi-img"
+                  />
+                  <div class="card-body">
+                    <div class="card-text text-center">
+                      <p>Accessories</p>
+                      <h5>Blutooth Speaker</h5>
+                      <h6>$150.00</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0" style="width: 18rem">
+                  <img
+                    src="img/product8.png.webp"
+                    class="card-img-top"
+                    alt="..."
+                    id="swi-img"
+                  />
+                  <div class="card-body">
+                    <div class="card-text text-center">
+                      <p>Accessories</p>
+                      <h5>Charging</h5>
+                      <h6>$150.00</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------- -->
+    <section class="sec-6">
+      <div class="s6-sub container">
+        <div class="s6-bx1">
+          <p>Popular Item in the market</p>
+          <h2>Latest News</h2>
+        </div>
+        <div class="s6-bx2">
+          <div class="s6-card-area row">
+            <div
+              class="card col-lg-4 col-md-6 col-sm-12"
+              id="s6-cc"
+              style="width: 25rem"
+            >
+              <img src="img/blog1.png.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-text" id="s6-card-tx">
+                  <ul class="d-flex ps-0">
+                    <li style="list-style: none" class="p-2">By Admin</li>
+                    <li style="list-style: none" class="p-2">
+                      <i class="fa-solid fa-face-smile"></i> &nbsp; 2 comments
+                    </li>
+                  </ul>
+                  <h4>The Richland Center Shooping News and weekly shooper</h4>
+                  <p>
+                    Let one fifth i bring fly to divided face for bearing divide
+                    unto seed. Winged divided light Forth.
+                  </p>
+                </div>
+                <a href="#" class=""
+                  >Read More &nbsp; <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <div
+              class="card col-lg-4 col-md-6 col-sm-12"
+              id="s6-cc"
+              style="width: 25rem"
+            >
+              <img src="img/blog2.png.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-text" id="s6-card-tx">
+                  <ul class="d-flex ps-0">
+                    <li style="list-style: none" class="p-2">By Admin</li>
+                    <li style="list-style: none" class="p-2">
+                      <i class="fa-solid fa-face-smile"></i> &nbsp; 2 comments
+                    </li>
+                  </ul>
+                  <h4>The Richland Center Shooping News and weekly shooper</h4>
+                  <p>
+                    Let one fifth i bring fly to divided face for bearing divide
+                    unto seed. Winged divided light Forth.
+                  </p>
+                </div>
+                <a href="#" class=""
+                  >Read More &nbsp; <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+            <div
+              class="card col-lg-4 col-md-6 col-sm-12"
+              id="s6-cc"
+              style="width: 25rem"
+            >
+              <img src="img/blog3.png.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <div class="card-text" id="s6-card-tx">
+                  <ul class="d-flex ps-0">
+                    <li style="list-style: none" class="p-2">By Admin</li>
+                    <li style="list-style: none" class="p-2">
+                      <i class="fa-solid fa-face-smile"></i> &nbsp; 2 comments
+                    </li>
+                  </ul>
+                  <h4>The Richland Center Shooping News and weekly shooper</h4>
+                  <p>
+                    Let one fifth i bring fly to divided face for bearing divide
+                    unto seed. Winged divided light Forth.
+                  </p>
+                </div>
+                <a href="#" class=""
+                  >Read More &nbsp; <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------------- -->
+    <section class="sec-7">
+      <div class="s7-sub">
+        <h2>GET UPDATE FROM ANYWHERE</h2>
+        <p>Bearing Void gathering light light his eavening unto dont afraid</p>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+    <!-- ----------------------------------- -->
+    <footer>
+      <div class="f-sub container">
+        <div class="f-bx-main row">
+          <div class="f-bx col-lg-3 col-md-6 col-sm-12">
+            <h1 class="text-light">Our Mission</h1>
+            <br />
+            <p class="text-light">
+              So seed seed green that winged cattle in. Gathering thing made fly
+              you're no divided deep moved us lan Gathering thing us land years
+              living.
+            </p>
+            <p class="text-light">
+              So seed seed green that winged cattle in. Gathering thing made fly
+              you're no divided deep moved
+            </p>
+          </div>
+          <div
+            class="f-bx col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4 class="text-light">Quick Links</h4>
+            <br />
+            <ul>
+              <li><a href="#" class="text-light">Home</a></li>
+              <li><a href="#" class="text-light">Shop</a></li>
+              <li><a href="#" class="text-light">Blog</a></li>
+              <li><a href="#" class="text-light">Product</a></li>
+              <li><a href="#" class="text-light">Brand</a></li>
+              <li><a href="#" class="text-light">Contact</a></li>
+            </ul>
+          </div>
+          <div
+            class="f-bx col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4 class="text-light">Gallery</h4>
+            <br />
+            <div class="f-bx-imgbx">
+              <div class="f-img-bx" id="f-img1"></div>
+              <div class="f-img-bx" id="f-img2"></div>
+              <div class="f-img-bx" id="f-img3"></div>
+              <div class="f-img-bx" id="f-img4"></div>
+              <div class="f-img-bx" id="f-img5"></div>
+              <div class="f-img-bx" id="f-img6"></div>
+            </div>
+          </div>
+          <div
+            class="f-bx col-lg-3 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4 class="text-light">Contact Us</h4>
+            <div class="f-bx-imgbx-last">
+              <div class="f-icon-area">
+                <div class="f-icobx">
+                  <img src="img/iconmonstr-paper-plane-1-240.png" alt="" />
+                </div>
+                <div class="f-i-conbx">
+                  <h5 class="text-light">Head Office</h5>
+                  <p class="text-light">123, Main Street, Your City</p>
+                </div>
+              </div>
+              <div class="f-icon-area">
+                <div class="f-icobx">
+                  <img src="img/iconmonstr-phone-3-240.png" alt="" />
+                </div>
+                <div class="f-i-conbx">
+                  <h5 class="text-light">Phone Number</h5>
+                  <p class="text-light">+123 456 7890</p>
+                  <p class="text-light">+123 456 7890</p>
+                </div>
+              </div>
+              <div class="f-icon-area">
+                <div class="f-icobx">
+                  <img src="img/iconmonstr-email-1-240.png" alt="" />
+                </div>
+                <div class="f-i-conbx">
+                  <h5 class="text-light">Email</h5>
+                  <p class="text-light">free@infoexample.com</p>
+                  <p class="text-light">www.infoexample.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ------------------------------------------- -->
+    <footer class="foot-dev-name">
+      <p><b>YASH DUNGARIYA</b></p>
+    </footer>
+  </body>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</html>
